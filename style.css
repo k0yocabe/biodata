@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a0e9ff, #f1f1f1);
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1em 2em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline !important; /* Use of !important */
+}
+
+.myBio {
+    text-align: center;
+    padding: 3em 1em;
+    margin: 2em auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.myBioBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    margin-top: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.myBioBtn:hover {
+    background-color: #0056b3;
+}
+
+.myGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 2em;
+}
+
+.myGallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .myBio h1 {
+        font-size: 2.5em;
+    }
+    .myBio h2 {
+        font-size: 1.5em;
+    }
+    .myBio p {
+        font-size: 1em;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    .footer {
+        font-size: 0.8em;
+        padding: 1em;
+    }
+}
